@@ -4,7 +4,6 @@ sudo yum install -y wget
 sudo yum groupinstall -y "Development tools"
 sudo yum install -y openssl-devel glibc-devel krb5-devel
 
-
 mkdir -p ~/rpmbuild/SOURCES
 cd ~/rpmbuild/SOURCES 
 wget -c http://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-7.6p1.tar.gz
