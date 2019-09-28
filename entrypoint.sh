@@ -5,7 +5,7 @@ username='chiju'
 password=$bintray_key
 repository='rpms'
 package='openssh'
-git_repo='https://github.com/chiju/debs.git'
+git_repo='https://github.com/chiju/rpms.git'
 
 
 # creating version
