@@ -4,6 +4,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: bintray repo
-      uses: chiju/debs@master
+      uses: chiju/rpms@master
       env:
        bintray_key: ${{ secrets.bintray_key }}
