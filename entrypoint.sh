@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=7.6
+version=7.7
 username='chiju'
 password=$bintray_key
 repository='rpms'
@@ -19,11 +19,11 @@ cd debs
 #upoloading pacakges
 for f in $(find -name "*.rpm" -type f)
 do 
-	echo "Uploading $f"
-	curl -svvf -X PUT -T $f -u $username:$password \
-						    -H "X-Bintray-Version:$version" \
-							-H "X-Bintray-Package:$package" \
-							https://api.bintray.com/content/$username/$repository
+	echo "Uploading" 
+	curl -v  -X PUT -T $f -u chiju:32ea322465698d89b0b2844be7d8007527516e6e 
+												-H "X-Bintray-Version:7.6" 
+												-H "X-Bintray-Package:openssh" 
+												https://api.bintray.com/content/chiju/rpms/
 done
 
 # Publishing the version
