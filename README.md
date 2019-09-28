@@ -6,6 +6,10 @@
 2) Add package inside that repository
 3) Copy folder **.github/workflows/bintray-workflow.yml** to the github repo
 4) Add **Dockerfile** and **entrypoint.sh** in git repo root folder
+5) Add bintray API key as **secret** in the same git repo
+```
+Settings >> Secrets >> Add a new secret
+```
 
 ## For adding repo in server
 1) add repo 
