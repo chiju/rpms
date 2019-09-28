@@ -14,7 +14,7 @@ curl -svvf -u $username:$password \
            -X POST https://api.bintray.com/packages/$username/$repository/$package/versions \
            --data "{\"name\": \"$version\", \"github_use_tag_release_notes\": false }"
 git clone $git_repo
-cd debs
+cd rpms
 
 #upoloading pacakges
 for f in $(find -name "*.rpm" -type f)
