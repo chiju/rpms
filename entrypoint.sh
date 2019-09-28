@@ -23,6 +23,7 @@ do
 	curl -v  -X PUT -T $f -u chiju:32ea322465698d89b0b2844be7d8007527516e6e -H "X-Bintray-Version:$version" -H "X-Bintray-Package:$package" https://api.bintray.com/content/$username/$repository/
 done
 
+
 # Publishing the version
 curl -svvf -u $username:$password \
            -X POST https://api.bintray.com/content/$username/$repository/$package/$version/publish
