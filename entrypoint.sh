@@ -20,7 +20,7 @@ cd rpms
 for f in $(find -name "*.rpm" -type f)
 do 
 	echo "Uploading" 
-	curl -v  -X PUT -T $f -u chiju:32ea322465698d89b0b2844be7d8007527516e6e -H "X-Bintray-Version:7.8" -H "X-Bintray-Package:openssh" https://api.bintray.com/content/chiju/rpms/
+	curl -v  -X PUT -T $f -u chiju:32ea322465698d89b0b2844be7d8007527516e6e -H "X-Bintray-Version:$version" -H "X-Bintray-Package:$package" https://api.bintray.com/content/$username/$repository/
 done
 
 # Publishing the version
